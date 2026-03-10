@@ -3,24 +3,28 @@ import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
-    title: "Languages",
-    skills: ["Python", "R", "SQL", "JavaScript", "C++"],
+    title: "Frontend",
+    skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Redux"],
   },
   {
-    title: "ML / DL Frameworks",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Keras", "Hugging Face"],
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "REST APIs", "GraphQL", "JWT Auth"],
   },
   {
-    title: "Data & Visualization",
-    skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly"],
+    title: "Database",
+    skills: ["MongoDB", "Mongoose", "Firebase", "SQL"],
   },
   {
-    title: "Tools & Platforms",
-    skills: ["Git", "Docker", "AWS", "GCP", "Jupyter", "MLflow"],
+    title: "ML / AI",
+    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "OpenCV"],
+  },
+  {
+    title: "Tools & DevOps",
+    skills: ["Git", "GitHub", "Docker", "Postman", "VS Code", "Linux"],
   },
   {
     title: "Concepts",
-    skills: ["CNNs", "RNNs", "Transformers", "GANs", "NLP", "Computer Vision", "Reinforcement Learning"],
+    skills: ["MERN Stack", "CNNs", "NLP", "Data Structures", "Algorithms", "System Design"],
   },
 ];
 
