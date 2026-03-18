@@ -10,7 +10,7 @@ const projects = [
     tags: ["PyTorch", "CNN", "Transfer Learning", "Medical AI"],
     github: "https://github.com/HimanshuKumar83/Plant-Doctor",
     demo: "https://drive.google.com/file/d/1tW6eSkr4UVCp4dDYBwu1LSiOhAzkypfO/view?usp=sharing",
-    image: "public/plant-doctor.png",
+    src: "/plant-doctor.png",
   },
   {
     title: "Brainstorm Connect (Web Platform for Community,Club & College)",
@@ -18,7 +18,7 @@ const projects = [
     tags: ["React", "Node.js", "Express.js", "MongoDB", "FastAPI"],
     github: "https://github.com/HimanshuKumar83/CampusConnect",
     demo: "https://campus-connect-six-livid.vercel.app/",
-    image: "public/campusconnect.png",
+    src: "/campusconnect.png",
   },
   {
     title: "MindEase (Mental Health Support Platform)",
@@ -26,7 +26,7 @@ const projects = [
     tags: ["Python", "Machine Learning", "NLP", "Streamlit", "LLM-API"],
     github: "https://github.com/HimanshuKumar83/MindEase",
     demo: "#",
-    image: "public/MindEase.png",
+    src: "/MindEase.png",
   },
   {
     title: "HealthGPT (Medical AI Assistant)",
@@ -34,7 +34,7 @@ const projects = [
     tags: ["RAG", "GEN AI", "LLM", "LangChain", "Llama Index"],
     github: "https://github.com/HimanshuKumar83/HealthGPT",
     demo: "#",
-    image: "public/HealthGPT.png",
+    src: "/HealthGPT.png",
   },
 ];
 
@@ -65,7 +65,7 @@ const ProjectsSection = () => {
               >
                 <div className="w-full h-64 md:h-72 overflow-hidden bg-muted/30">
                   <img
-                    src={project.image}
+                    src={project.src}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
