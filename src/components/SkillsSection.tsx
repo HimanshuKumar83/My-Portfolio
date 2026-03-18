@@ -53,10 +53,10 @@ const SkillsSection = () => {
                 transition={{ delay: i * 0.1 }}
                 className="rounded-lg border border-border bg-card p-6"
               >
-                <h3 className="font-mono text-primary text-sm font-semibold mb-4">{cat.title}</h3>
+                <h3 className="font-mono text-primary text-base font-semibold mb-4">{cat.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {cat.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="text-xs">
+                    <Badge key={skill} variant="secondary" className="text-sm py-1 px-3">
                       {skill}
                     </Badge>
                   ))}

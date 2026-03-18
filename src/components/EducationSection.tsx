@@ -4,21 +4,21 @@ import { GraduationCap } from "lucide-react";
 const education = [
   {
     degree: "B.Tech in Computer Science & Engineering",
-    school: "Your University Name",
-    year: "2021 – 2025",
-    details: "Specialization in AI & Machine Learning. CGPA: 8.5/10",
+    school: "Lovely Professional University",
+    year: "2023 – Present",
+    details: "Specialization in AI & Machine Learning. CGPA: 7.74/10",
   },
   {
     degree: "Higher Secondary (12th)",
-    school: "Your School Name",
+    school: "National College Barauli",
     year: "2019 – 2021",
-    details: "Science stream with Mathematics. Score: 92%",
+    details: "Science stream with Mathematics. Score: 77.8%",
   },
   {
     degree: "Secondary (10th)",
-    school: "Your School Name",
+    school: "S.S Public School",
     year: "2019",
-    details: "Score: 95%",
+    details: "Score: 86%",
   },
 ];
 
@@ -32,7 +32,7 @@ const EducationSection = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            <span className="font-mono text-primary text-sm block mb-2">05.</span>
+            <span className="font-mono text-primary text-base block mb-2">05.</span>
             Education
           </h2>
           <div className="w-20 h-0.5 bg-primary/50 mb-10" />
@@ -57,10 +57,10 @@ const EducationSection = () => {
                     </div>
                   </div>
                   <div className="rounded-lg border border-border bg-card p-5 flex-1">
-                    <p className="font-mono text-xs text-primary mb-1">{edu.year}</p>
-                    <h3 className="font-semibold text-foreground">{edu.degree}</h3>
-                    <p className="text-sm text-muted-foreground">{edu.school}</p>
-                    <p className="text-xs text-muted-foreground/70 mt-2">{edu.details}</p>
+                    <p className="font-mono text-sm text-primary mb-1">{edu.year}</p>
+                    <h3 className="text-xl font-semibold text-foreground">{edu.degree}</h3>
+                    <p className="text-lg text-muted-foreground">{edu.school}</p>
+                    <p className="text-base text-muted-foreground/70 mt-2">{edu.details}</p>
                   </div>
                 </motion.div>
               ))}

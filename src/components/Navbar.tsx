@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ModeToggle } from "@/components/ModeToggle";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -27,17 +28,21 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-primary"
+              className="text-base text-muted-foreground transition-colors hover:text-primary"
             >
               {link.label}
             </a>
           ))}
+          <ModeToggle />
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <ModeToggle />
+          <button className="text-foreground" onClick={() => setOpen(!open)}>
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -55,7 +60,7 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                  className="text-base text-muted-foreground transition-colors hover:text-primary"
                 >
                   {link.label}
                 </a>

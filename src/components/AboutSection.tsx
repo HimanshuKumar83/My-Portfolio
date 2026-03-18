@@ -19,7 +19,7 @@ const AboutSection = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            <span className="font-mono text-primary text-sm block mb-2">01.</span>
+            <span className="font-mono text-primary text-base block mb-2">01.</span>
             About Me
           </h2>
           <div className="w-20 h-0.5 bg-primary/50 mb-8" />
@@ -48,7 +48,7 @@ const AboutSection = () => {
                   className="rounded-lg border border-border bg-card p-6 text-center hover:border-primary/50 hover:box-glow transition-all duration-300"
                 >
                   <item.icon className="mx-auto mb-3 text-primary" size={28} />
-                  <p className="text-sm font-medium text-foreground">{item.label}</p>
+                  <p className="text-lg font-medium text-foreground">{item.label}</p>
                 </motion.div>
               ))}
             </div>

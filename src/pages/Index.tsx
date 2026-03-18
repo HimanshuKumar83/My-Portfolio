@@ -8,10 +8,13 @@ import EducationSection from "@/components/EducationSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
+import StarBackground from "@/components/StarBackground";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      <StarBackground />
       <Navbar />
       <HeroSection />
       <AboutSection />
@@ -22,6 +25,7 @@ const Index = () => {
       <AchievementsSection />
       <ContactSection />
       <Footer />
+      <Chatbot />
     </div>
   );
 };
