@@ -40,15 +40,15 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-24">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-20 md:py-24">
+      <div className="container mx-auto px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            <span className="font-mono text-primary text-base block mb-2">03.</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
+            <span className="font-mono text-primary text-sm sm:text-base block mb-2">03.</span>
             Projects
           </h2>
           <div className="w-20 h-0.5 bg-primary/50 mb-10" />
@@ -74,12 +74,12 @@ const ProjectsSection = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-lg text-muted-foreground mb-4 leading-relaxed flex-1">
+                  <p className="text-base sm:text-lg text-muted-foreground mb-4 leading-relaxed flex-1">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-base py-1 px-3 border-primary/30 text-primary/80">
+                      <Badge key={tag} variant="outline" className="text-sm sm:text-base py-1 px-3 border-primary/30 text-primary/80">
                         {tag}
                       </Badge>
                     ))}

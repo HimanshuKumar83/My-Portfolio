@@ -91,14 +91,14 @@ const Chatbot = () => {
     <>
       {/* Floating Action Button */}
       <motion.div
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: 'spring' }}
       >
         <Button
           size="icon"
-          className="h-14 w-14 rounded-full shadow-lg hover:shadow-glow/50 transition-all hover:scale-110 bg-primary text-primary-foreground"
+          className="h-12 w-12 sm:h-14 sm:w-14 rounded-full shadow-lg hover:shadow-glow/50 transition-all hover:scale-110 bg-primary text-primary-foreground"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
@@ -113,7 +113,7 @@ const Chatbot = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-24 right-6 w-80 sm:w-96 h-[500px] max-h-[calc(100vh-120px)] bg-card border border-border rounded-xl shadow-2xl flex flex-col z-50 overflow-hidden"
+            className="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 w-[calc(100%-2rem)] sm:w-96 h-[500px] max-h-[calc(100vh-120px)] bg-card border border-border rounded-xl shadow-2xl flex flex-col z-50 overflow-hidden"
           >
             {/* Header */}
             <div className="bg-muted p-4 border-b border-border flex items-center justify-between">

@@ -10,15 +10,15 @@ const certificates = [
 
 const CertificatesSection = () => {
   return (
-    <section className="py-24 bg-card/30">
-      <div className="container mx-auto px-4">
+    <section className="py-20 md:py-24 bg-card/30">
+      <div className="container mx-auto px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            <span className="font-mono text-primary text-base block mb-2">04.</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
+            <span className="font-mono text-primary text-sm sm:text-base block mb-2">04.</span>
             Certificates
           </h2>
           <div className="w-20 h-0.5 bg-primary/50 mb-10" />
@@ -37,12 +37,12 @@ const CertificatesSection = () => {
                 className="group flex items-start gap-4 rounded-lg border border-border bg-card p-5 hover:border-primary/40 transition-all duration-300"
               >
                 <Award className="text-primary mt-1 shrink-0" size={20} />
-                <div className="flex-1">
-                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-lg">
-                    {cert.title}
-                  </h3>
-                  <p className="text-base text-muted-foreground mt-1">{cert.issuer} • {cert.year}</p>
-                </div>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors text-base sm:text-lg truncate sm:whitespace-normal">
+                      {cert.title}
+                    </h3>
+                    <p className="text-sm sm:text-base text-muted-foreground mt-1">{cert.issuer} • {cert.year}</p>
+                  </div>
                 <ExternalLink className="text-muted-foreground/50 group-hover:text-primary shrink-0 mt-1 transition-colors" size={14} />
               </motion.a>
             ))}

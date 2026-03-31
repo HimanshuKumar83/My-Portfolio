@@ -17,8 +17,8 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <a href="#" className="font-mono text-lg font-bold text-primary">
+      <div className="container mx-auto flex h-16 items-center justify-between px-6 md:px-8">
+        <a href="#" className="font-mono text-lg font-bold text-primary shrink-0">
           &lt;Portfolio /&gt;
         </a>
 
@@ -37,9 +37,13 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <div className="md:hidden flex items-center gap-4">
+        <div className="md:hidden flex items-center gap-3">
           <ModeToggle />
-          <button className="text-foreground" onClick={() => setOpen(!open)}>
+          <button 
+            className="text-foreground p-1 hover:bg-muted rounded-md transition-colors" 
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>

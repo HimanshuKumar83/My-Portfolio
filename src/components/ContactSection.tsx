@@ -48,15 +48,15 @@ const ContactSection = () => {
       );
   };
   return (
-    <section id="contact" className="py-24">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-20 md:py-24">
+      <div className="container mx-auto px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
-            <span className="font-mono text-primary text-sm block mb-2">07.</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
+            <span className="font-mono text-primary text-sm sm:text-base block mb-2">07.</span>
             Get In Touch
           </h2>
           <div className="w-20 h-0.5 bg-primary/50 mb-10" />

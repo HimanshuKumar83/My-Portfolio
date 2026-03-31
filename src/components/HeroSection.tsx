@@ -17,10 +17,10 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left pt-12 lg:pt-0"
+            className="text-center lg:text-left pt-8 lg:pt-0"
           >
-            <p className="font-mono text-xl md:text-2xl text-primary mb-4">Hello, I'm</p>
-            <h1 className="text-7xl md:text-9xl lg:text-[7rem] font-bold mb-6 tracking-tight">
+            <p className="font-mono text-lg md:text-2xl text-primary mb-3">Hello, I'm</p>
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] font-bold mb-4 tracking-tight">
               <motion.span
                 className="gradient-text inline-block"
                 initial="hidden"
@@ -47,18 +47,18 @@ const HeroSection = () => {
                 ))}
               </motion.span>
             </h1>
-            <p className="text-4xl md:text-5xl text-muted-foreground mb-6 font-medium">
+            <p className="text-2xl sm:text-3xl md:text-5xl text-muted-foreground mb-4 font-medium">
               Aspiring Machine Learning Engineer
             </p>
-            <p className="max-w-2xl mx-auto lg:mx-0 text-muted-foreground/80 mb-10 leading-relaxed text-2xl md:text-3xl">
+            <p className="max-w-2xl mx-auto lg:mx-0 text-muted-foreground/80 mb-8 leading-relaxed text-lg sm:text-xl md:text-2xl">
               Passionate about building intelligent systems that solve real-world problems using deep learning, NLP, and computer vision.
             </p>
 
-            <div className="flex items-center justify-center lg:justify-start gap-6 mb-10">
-              <Button asChild size="lg" className="hover:scale-105 transition-transform text-lg">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
+              <Button asChild size="lg" className="w-full sm:w-auto hover:scale-105 transition-transform text-base">
                 <a href="#contact">Get in Touch</a>
               </Button>
-              <Button variant="outline" size="lg" asChild className="hover:border-primary hover:text-primary transition-all text-lg">
+              <Button variant="outline" size="lg" asChild className="w-full sm:w-auto hover:border-primary hover:text-primary transition-all text-base">
                 <a href="/finalcvhimanshu123456.pdf" download>Download Resume</a>
               </Button>
             </div>
@@ -84,9 +84,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1, type: "spring", bounce: 0.4, delay: 0.2 }}
-            className="flex justify-center items-center py-10 lg:py-0"
+            className="flex justify-center items-center py-6 lg:py-0"
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 group">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 group">
               {/* Outer rotating gradient frame */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary via-accent to-primary animate-[spin_6s_linear_infinite] opacity-75 group-hover:opacity-100 transition-opacity blur-[2px] p-1" />
               {/* Pulsing glow layer */}
@@ -103,14 +103,14 @@ const HeroSection = () => {
 
               {/* Decorative badges */}
               <motion.div 
-                className="absolute top-4 -right-4 bg-card border border-primary/50 text-primary px-4 py-2 rounded-full text-sm font-mono font-semibold z-20 shadow-lg shadow-primary/20 backdrop-blur-md"
+                className="absolute top-2 -right-2 sm:top-4 sm:-right-4 bg-card border border-primary/50 text-primary px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-mono font-semibold z-20 shadow-lg shadow-primary/20 backdrop-blur-md"
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
               >
                 ML Engineer
               </motion.div>
               <motion.div 
-                className="absolute bottom-10 -left-6 bg-card border border-accent/50 text-accent px-4 py-2 rounded-full text-sm font-mono font-semibold z-20 shadow-lg shadow-accent/20 backdrop-blur-md"
+                className="absolute bottom-6 -left-4 sm:bottom-10 sm:-left-6 bg-card border border-accent/50 text-accent px-3 py-1 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-mono font-semibold z-20 shadow-lg shadow-accent/20 backdrop-blur-md"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               >
