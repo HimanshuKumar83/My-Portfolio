@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Bot, User } from 'lucide-react';
+import { MessageCircle, X, Send, Bot, User, Sparkles } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -101,10 +101,18 @@ const Chatbot = () => {
       >
         <Button
           size="icon"
-          className="h-12 w-12 sm:h-14 sm:w-14 rounded-full shadow-lg hover:shadow-glow/50 transition-all hover:scale-110 bg-primary text-primary-foreground"
+          className="h-12 w-12 sm:h-14 sm:w-14 rounded-full shadow-lg hover:shadow-glow/50 transition-all hover:scale-110 bg-primary text-primary-foreground relative group overflow-hidden"
           onClick={() => setIsOpen((prev) => !prev)}
         >
-          {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary via-accent to-primary opacity-0 group-hover:opacity-20 transition-opacity" />
+          {isOpen ? (
+            <X size={24} className="relative z-10" />
+          ) : (
+            <div className="relative z-10">
+              <Sparkles size={24} className="absolute -top-1 -right-1 text-white animate-pulse" />
+              <Bot size={24} />
+            </div>
+          )}
         </Button>
       </motion.div>
 
