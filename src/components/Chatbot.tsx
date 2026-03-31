@@ -16,39 +16,42 @@ const INITIAL_MESSAGE: Message = {
   sender: 'bot',
 };
 
-// Simple keyword-based QA engine for recruiter queries
 const getBotResponse = (input: string): string => {
   const lowerInput = input.toLowerCase();
   
   if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack')) {
-    return "Himanshu specializes in Machine Learning and Data Science. His core stack includes Python, PyTorch, TensorFlow, Scikit-learn, Pandas, and fastAPI. He also has experience deploying models using Docker and AWS.";
+    return "Himanshu's core tech stack includes Python (PyTorch, TensorFlow, Scikit-learn), JavaScript (React, Node.js), and databases like MongoDB and SQL. He also works with tools like Docker, Git, and Linux.";
   }
   
   if (lowerInput.includes('project') || lowerInput.includes('portfolio') || lowerInput.includes('build')) {
-    return "Some of his notable projects include an Image Classification CNN using transfer learning on ResNet50, a Sentiment Analysis engine fine-tuned on BERT, and an LSTM-based Stock Price Predictor. You can check out the Projects section for links to the demos!";
+    return "Himanshu has built several impressive projects: 'Plant-Doctor' (Crop Disease Prediction), 'Brainstorm Connect' (Campus Collaboration Platform), 'MindEase' (Mental Health Support), and 'HealthGPT' (Medical AI Assistant). You can see the full details in the Projects section!";
   }
   
   if (lowerInput.includes('experience') || lowerInput.includes('work') || lowerInput.includes('job')) {
-    return "Himanshu is an aspiring Machine Learning Engineer. While he doesn't have formal full-time industry experience yet, he has built multiple end-to-end ML projects demonstrating his capabilities in computer vision, NLP, and model deployment.";
+    return "Himanshu is an aspiring Machine Learning Engineer currently pursuing his B.Tech at LPU. He has built end-to-end ML projects involving CNNs, NLP, and RAG, demonstrating strong practical knowledge in AI and Software Development.";
   }
   
   if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach')) {
-    return "You can reach Himanshu directly via email at himanshukumarsingh454@gmail.com. You can also connect with him on LinkedIn. Both links are available in the Contact section.";
+    return "You can reach Himanshu directly via email at himanshukumarsingh454@gmail.com or connect with him on LinkedIn. Both links are available in the Contact section at the bottom.";
   }
   
-  if (lowerInput.includes('education') || lowerInput.includes('degree') || lowerInput.includes('study')) {
-    return "He has a strong foundation in mathematics, statistics, and programming. You can view his full educational background in the Education section.";
+  if (lowerInput.includes('education') || lowerInput.includes('degree') || lowerInput.includes('study') || lowerInput.includes('college') || lowerInput.includes('school')) {
+    return "He is currently pursuing a B.Tech in Computer Science & Engineering at Lovely Professional University (2023–Present), specializing in AI & Machine Learning. He previously completed his 10th and 12th with strong academic scores.";
+  }
+
+  if (lowerInput.includes('cgpa') || lowerInput.includes('grade') || lowerInput.includes('score') || lowerInput.includes('percentage') || lowerInput.includes('marks')) {
+    return "Himanshu currently maintains a CGPA of 7.74/10 in his B.Tech at Lovely Professional University. He also scored 77.8% in 12th and 86% in 10th grade.";
   }
   
   if (lowerInput.includes('resume') || lowerInput.includes('cv')) {
-    return "You can download his latest resume from the Hero section at the top of the page, or simply scroll up and click the 'Download Resume' button.";
+    return "You can download his latest resume from the Hero section at the top of the page. Just look for the 'Download Resume' button near his profile photo!";
   }
 
   if (lowerInput.includes('hi') || lowerInput.includes('hello') || lowerInput.includes('hey')) {
-    return "Hi there! What would you like to know about Himanshu's profile?";
+    return "Hi there! I'm Himanshu's virtual assistant. What would you like to know about his skills, projects, or education?";
   }
 
-  return "I'm not quite sure how to answer that. Try asking about his skills, projects, education, or how to contact him!";
+  return "I'm not quite sure about that. Try asking about his CGPA, projects, tech stack, or how to contact him!";
 };
 
 const Chatbot = () => {
