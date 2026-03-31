@@ -18,31 +18,31 @@ const INITIAL_MESSAGE: Message = {
 
 const getBotResponse = (input: string): string => {
   const lowerInput = input.toLowerCase();
-  
+
   if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack')) {
     return "Himanshu's core tech stack includes Python (PyTorch, TensorFlow, Scikit-learn), JavaScript (React, Node.js), and databases like MongoDB and SQL. He also works with tools like Docker, Git, and Linux.";
   }
-  
+
   if (lowerInput.includes('project') || lowerInput.includes('portfolio') || lowerInput.includes('build')) {
     return "Himanshu has built several impressive projects: 'Plant-Doctor' (Crop Disease Prediction), 'Brainstorm Connect' (Campus Collaboration Platform), 'MindEase' (Mental Health Support), and 'HealthGPT' (Medical AI Assistant). You can see the full details in the Projects section!";
   }
-  
+
   if (lowerInput.includes('experience') || lowerInput.includes('work') || lowerInput.includes('job')) {
     return "Himanshu is an aspiring Machine Learning Engineer currently pursuing his B.Tech at LPU. He has built end-to-end ML projects involving CNNs, NLP, and RAG, demonstrating strong practical knowledge in AI and Software Development.";
   }
-  
+
   if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach')) {
     return "You can reach Himanshu directly via email at himanshukumarsingh454@gmail.com or connect with him on LinkedIn. Both links are available in the Contact section at the bottom.";
   }
-  
+
   if (lowerInput.includes('education') || lowerInput.includes('degree') || lowerInput.includes('study') || lowerInput.includes('college') || lowerInput.includes('school')) {
     return "He is currently pursuing a B.Tech in Computer Science & Engineering at Lovely Professional University (2023–Present), specializing in AI & Machine Learning. He previously completed his 10th and 12th with strong academic scores.";
   }
 
   if (lowerInput.includes('cgpa') || lowerInput.includes('grade') || lowerInput.includes('score') || lowerInput.includes('percentage') || lowerInput.includes('marks')) {
-    return "Himanshu currently maintains a CGPA of 7.74/10 in his B.Tech at Lovely Professional University. He also scored 77.8% in 12th and 86% in 10th grade.";
+    return "Himanshu currently maintains a CGPA of 7.92/10 in his B.Tech at Lovely Professional University. He also scored 77.8% in 12th and 86% in 10th grade.";
   }
-  
+
   if (lowerInput.includes('resume') || lowerInput.includes('cv')) {
     return "You can download his latest resume from the Hero section at the top of the page. Just look for the 'Download Resume' button near his profile photo!";
   }
@@ -75,7 +75,7 @@ const Chatbot = () => {
       text: inputValue,
       sender: 'user',
     };
-    
+
     setMessages((prev) => [...prev, userMessage]);
     setInputValue('');
 
@@ -140,11 +140,10 @@ const Chatbot = () => {
                     {message.sender === 'user' ? <User size={16} /> : <Bot size={16} />}
                   </div>
                   <div
-                    className={`px-4 py-2 rounded-2xl max-w-[80%] text-sm ${
-                      message.sender === 'user'
+                    className={`px-4 py-2 rounded-2xl max-w-[80%] text-sm ${message.sender === 'user'
                         ? 'bg-primary text-primary-foreground rounded-tr-sm'
                         : 'bg-muted text-foreground rounded-tl-sm'
-                    }`}
+                      }`}
                   >
                     {message.text}
                   </div>
