@@ -6,7 +6,7 @@ const education = [
     degree: "B.Tech in Computer Science & Engineering",
     school: "Lovely Professional University",
     year: "2023 – Present",
-    details: "Specialization in AI & Machine Learning. CGPA: 7.92/10",
+    details: "Specialization in AI & Machine Learning. CGPA: 7.95/10",
   },
   {
     degree: "Higher Secondary (12th)",
