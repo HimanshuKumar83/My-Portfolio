@@ -16,9 +16,9 @@ const projects = [
     ],
     tags: ["Python", "React", "FastAPI", "LangChain", "ChromaDB", "SentenceTransformers", "FAISS", "Gemini 2.5 Flash", "Tailwind"],
     github: "https://github.com/HimanshuKumar83/HealthGPT",
-    demo: "",
+    demo: "https://drive.google.com/file/d/1lsmOOE-sdoStSE4-6tM5dp5y_lIxAMHK/view?usp=sharing",
     src: "/HealthGPT.png",
-    hasVideoDemo: true
+    
   },
   {
     title: "Plant Doctor – AI Powered Plant Disease Prediction and Smart Treatment Advisor",

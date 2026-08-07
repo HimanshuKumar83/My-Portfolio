@@ -35,7 +35,7 @@ const certificates = [
     issuer: "Lovely Professional University",
     year: "Jul'2025",
     link: "https://drive.google.com/file/d/1iJeuJrcQbCAFJQqSi96Nu-8cVbncqB1_/view?usp=drive_link",
-    image: "/placeholder.svg"
+    image: "/fullstack.png"
   },
 ];
 
