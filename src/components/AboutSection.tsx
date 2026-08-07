@@ -27,13 +27,13 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-muted-foreground leading-relaxed mb-4 text-base sm:text-lg">
-                I'm an aspiring Machine Learning Engineer with a strong foundation in mathematics, statistics, and programming. I'm passionate about leveraging AI to create innovative solutions that make a meaningful impact.
+                I’m Himanshu Kumar, a Computer Science student and aspiring AI/ML engineer with hands-on experience building end-to-end solutions in healthcare AI, computer vision, and full-stack development.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4 text-base sm:text-lg">
-                My journey in ML began with a curiosity about how machines can learn from data and make intelligent decisions. Since then, I've been continuously learning and building projects that span across computer vision, natural language processing, and predictive analytics.
+                My recent work includes a RAG-based health assistant grounded in WHO-verified data, a CNN-based plant disease detection platform, and a community web platform for clubs and organizations.
               </p>
               <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-                I'm constantly exploring cutting-edge research papers and implementing state-of-the-art models to stay at the forefront of this rapidly evolving field.
+                I enjoy turning real-world problems into practical products using Python, React, FastAPI, MongoDB, and modern ML tools such as TensorFlow, PyTorch, and LangChain.
               </p>
             </div>
 

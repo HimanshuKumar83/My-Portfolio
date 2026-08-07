@@ -30,6 +30,13 @@ const certificates = [
     link: "https://www.freecodecamp.org/certification/fccd0f8e33b-4fe8-43c5-9557-566635c17626/responsive-web-design",
     image: "/freecode.png"
   },
+  {
+    title: "Full Stack Development in React and Node",
+    issuer: "Lovely Professional University",
+    year: "Jul'2025",
+    link: "https://drive.google.com/file/d/1iJeuJrcQbCAFJQqSi96Nu-8cVbncqB1_/view?usp=drive_link",
+    image: "/placeholder.svg"
+  },
 ];
 
 const CertificatesSection = () => {

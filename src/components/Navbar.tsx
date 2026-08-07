@@ -33,6 +33,13 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          <a
+            href="/12324047_Himanshu%20Kumar%20(1).pdf"
+            download
+            className="rounded-full border border-primary/40 px-3 py-1.5 text-sm font-medium text-primary transition-colors hover:bg-primary/10"
+          >
+            Resume
+          </a>
           <ModeToggle />
         </div>
 
@@ -69,6 +76,14 @@ const Navbar = () => {
                   {link.label}
                 </a>
               ))}
+              <a
+                href="/12324047_Himanshu%20Kumar%20(1).pdf"
+                download
+                onClick={() => setOpen(false)}
+                className="text-base font-medium text-primary transition-colors hover:text-primary"
+              >
+                Resume
+              </a>
             </div>
           </motion.div>
         )}

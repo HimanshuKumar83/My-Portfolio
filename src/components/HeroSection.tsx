@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Download, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const resumeUrl = "/12324047_Himanshu%20Kumar%20(1).pdf";
 
 const HeroSection = () => {
   return (
@@ -48,10 +50,10 @@ const HeroSection = () => {
               </motion.span>
             </h1>
             <p className="text-2xl sm:text-3xl md:text-5xl text-muted-foreground mb-4 font-medium">
-              Aspiring Machine Learning Engineer
+              AI/ML Engineer & Full-Stack Developer
             </p>
             <p className="max-w-2xl mx-auto lg:mx-0 text-muted-foreground/80 mb-8 leading-relaxed text-lg sm:text-xl md:text-2xl">
-              Passionate about building intelligent systems that solve real-world problems using deep learning, NLP, and computer vision.
+              I build practical AI solutions for healthcare, computer vision, and web products using Python, React, FastAPI, and modern ML tools.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
@@ -59,7 +61,9 @@ const HeroSection = () => {
                 <a href="#contact">Get in Touch</a>
               </Button>
               <Button variant="outline" size="lg" asChild className="w-full sm:w-auto hover:border-primary hover:text-primary transition-all text-base">
-                <a href="/12324047_Himanshu Kumar (1).pdf" download>Download Resume</a>
+                <a href={resumeUrl} download className="flex items-center gap-2">
+                  <Download size={18} /> Download Resume
+                </a>
               </Button>
             </div>
 
