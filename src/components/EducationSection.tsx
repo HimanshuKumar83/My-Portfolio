@@ -3,22 +3,22 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "B.Tech in Computer Science & Engineering",
-    school: "Lovely Professional University",
-    year: "2023 – Present",
-    details: "Specialization in AI & Machine Learning. CGPA: 7.95/10",
+    degree: "Bachelor of Technology - Computer Science and Engineering",
+    school: "Lovely Professional University (Punjab, India)",
+    year: "Aug' 2023 - Present",
+    details: "CGPA: 8.10/10",
   },
   {
-    degree: "Higher Secondary (12th)",
-    school: "National College Barauli",
-    year: "2019 – 2021",
-    details: "Science stream with Mathematics. Score: 77.8%",
+    degree: "Intermediate",
+    school: "National College (Barauli, Bihar)",
+    year: "Apr' 2021 – Mar' 2022",
+    details: "Percentage: 77.8%",
   },
   {
-    degree: "Secondary (10th)",
-    school: "S.S Public School",
-    year: "2019",
-    details: "Score: 86%",
+    degree: "Matriculation",
+    school: "S.S Public School (Gopalganj, Bihar)",
+    year: "Apr' 2019 – Mar' 2020",
+    details: "Percentage: 86%",
   },
 ];
 

@@ -3,24 +3,14 @@ import { Trophy, Star, Target, Zap } from "lucide-react";
 
 const achievements = [
   {
-    icon: Trophy,
-    title: "Kaggle Competition – Top 30%",
-    description: "Achieved a top 30% ranking in a Kaggle image classification competition."
-  },
-  {
-    icon: Star,
-    title: "AI for Bharat – Top 3 (North India Zone)",
-    description: "Secured a Top 3 position in the North India zone in the AI for Bharat competition by developing innovative AI-based solutions addressing real-world challenges."
-  },
-  {
     icon: Target,
     title: "Gold Badge",
-    description: "Earned a Gold Badge in Python and C++ on the HackerRank platform."
+    description: "Got Gold Level Badge in C++ and Python on Hacker Rank (Feb 2024)."
   },
   {
-    icon: Zap,
-    title: "Open Source Contributor",
-    description: "Active contributor to machine learning libraries with 50+ merged pull requests."
+    icon: Trophy,
+    title: "Problem Solver",
+    description: "Solved 300+ coding problems across LeetCode, GFG & Hacker Rank (Sep 2025)."
   }
 ];
 

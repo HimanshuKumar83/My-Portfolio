@@ -59,7 +59,7 @@ const HeroSection = () => {
                 <a href="#contact">Get in Touch</a>
               </Button>
               <Button variant="outline" size="lg" asChild className="w-full sm:w-auto hover:border-primary hover:text-primary transition-all text-base">
-                <a href="/finalcvhimanshu123456.pdf" download>Download Resume</a>
+                <a href="/12324047_Himanshu Kumar (1).pdf" download>Download Resume</a>
               </Button>
             </div>
 

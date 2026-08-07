@@ -3,28 +3,28 @@ import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Redux"],
+    title: "Languages",
+    skills: ["Python", "C++", "JavaScript", "Java"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "REST APIs", "GraphQL", "JWT Auth"],
+    title: "Frameworks & Frontend",
+    skills: ["HTML", "CSS", "Bootstrap", "NodeJS", "React", "Express", "Tailwind CSS"],
   },
   {
-    title: "Database",
-    skills: ["MongoDB", "Mongoose", "Firebase", "SQL"],
+    title: "Tools & Platforms",
+    skills: ["MySQL", "MongoDB", "Docker", "Git", "GitHub", "Postman", "Vercel", "Automation Anywhere", "N8N"],
   },
   {
-    title: "ML / AI",
-    skills: ["TensorFlow", "PyTorch", "Scikit-learn", "Pandas", "NumPy", "OpenCV"],
+    title: "AI / ML",
+    skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "TensorFlow", "PyTorch", "LangChain", "Langgraph"],
   },
   {
-    title: "Tools & DevOps",
-    skills: ["Git", "GitHub", "Docker", "Postman", "VS Code", "Linux"],
+    title: "Core CS",
+    skills: ["Data Structure and Algorithm", "DBMS", "Operating System", "Computer Network", "OOPs"],
   },
   {
-    title: "Concepts",
-    skills: ["MERN Stack", "CNNs", "NLP", "Data Structures", "Algorithms", "System Design"],
+    title: "Soft Skills",
+    skills: ["Problem-Solving", "Quick Learner", "Adaptability"],
   },
 ];
 

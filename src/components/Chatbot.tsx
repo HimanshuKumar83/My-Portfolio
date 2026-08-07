@@ -24,11 +24,11 @@ const getBotResponse = (input: string): string => {
   }
 
   if (lowerInput.includes('project') || lowerInput.includes('portfolio') || lowerInput.includes('build')) {
-    return "Himanshu has built several impressive projects: 'Plant-Doctor' (Crop Disease Prediction), 'Brainstorm Connect' (Campus Collaboration Platform), 'MindEase' (Mental Health Support), and 'HealthGPT' (Medical AI Assistant). You can see the full details in the Projects section!";
+    return "Himanshu has built several impressive projects: 'Health GPT' (Context-Aware AI Health Assistant using RAG & WHO Data), 'Plant Doctor' (Crop Disease Prediction), and 'Brainstorm Connect' (Web Platform for Community, Clubs & Organizations). You can check out an interactive Video Demo of Health GPT directly in the Projects section!";
   }
 
   if (lowerInput.includes('experience') || lowerInput.includes('work') || lowerInput.includes('job')) {
-    return "Himanshu is an aspiring Machine Learning Engineer currently pursuing his B.Tech at LPU. He has built end-to-end ML projects involving CNNs, NLP, and RAG, demonstrating strong practical knowledge in AI and Software Development.";
+    return "Himanshu is an aspiring Machine Learning Engineer currently pursuing his B.Tech at Lovely Professional University. He has built end-to-end AI/ML projects involving CNNs, NLP, and RAG, demonstrating strong practical knowledge in AI and Software Development.";
   }
 
   if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach')) {
@@ -36,11 +36,11 @@ const getBotResponse = (input: string): string => {
   }
 
   if (lowerInput.includes('education') || lowerInput.includes('degree') || lowerInput.includes('study') || lowerInput.includes('college') || lowerInput.includes('school')) {
-    return "He is currently pursuing a B.Tech in Computer Science & Engineering at Lovely Professional University (2023–Present), specializing in AI & Machine Learning. He previously completed his 10th and 12th with strong academic scores.";
+    return "He is currently pursuing a B.Tech in Computer Science & Engineering at Lovely Professional University (2023–Present). He completed his Intermediate (12th) with 77.8% and Matriculation (10th) with 86%.";
   }
 
   if (lowerInput.includes('cgpa') || lowerInput.includes('grade') || lowerInput.includes('score') || lowerInput.includes('percentage') || lowerInput.includes('marks')) {
-    return "Himanshu currently maintains a CGPA of 7.92/10 in his B.Tech at Lovely Professional University. He also scored 77.8% in 12th and 86% in 10th grade.";
+    return "Himanshu currently maintains a CGPA of 8.10/10 in his B.Tech at Lovely Professional University. He also scored 77.8% in his 12th board exams and 86% in 10th.";
   }
 
   if (lowerInput.includes('resume') || lowerInput.includes('cv')) {
